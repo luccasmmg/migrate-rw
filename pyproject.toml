@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "migrate-rw"
+version = "0.1.0"
+description = "This script intends to allow users to quickly define a list of datasets from RW and import them into CKAN"
+authors = ["Luccas Mateus <luccasmmg@gmail.com>"]
+readme = "README.md"
+packages = [{include = "migrate_rw"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+ckanapi = "^4.7"
+python-dotenv = "^1.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
