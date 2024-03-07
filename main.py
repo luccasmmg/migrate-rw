@@ -11,11 +11,9 @@ CKAN_URL = os.getenv("CKAN_URL")
 CKAN_API_KEY = os.getenv("CKAN_API_KEY")
 CKAN_ORG_NAME = os.getenv("CKAN_ORG_NAME")
 
-# generate random string using only letters
 def random_string(length=15):
     return ''.join(random.choices(string.digits, k=length))
 
-# pretty print dict
 def pp(d):
     print(json.dumps(d, indent=2))
 
@@ -78,6 +76,7 @@ def create_dataset_in_ckan(dataset_id: str):
     )
     print(response.json())
 
+# Change this to the ID of datasets you want to create in CKAN
 datasets = [
     "065ffeb1-c0b8-49c4-80b7-bd168e17568c"
 ]
